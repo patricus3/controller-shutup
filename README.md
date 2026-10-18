@@ -1,0 +1,27 @@
+# Controller Shutup
+
+An NVDA add-on that stops NVDA's current speech whenever you press a button on a game controller, much like pressing Control on the keyboard.
+
+## Features
+
+- Works with Xbox and other XInput controllers (all buttons, d-pad and triggers).
+- Works with other controllers Windows sees as joysticks, such as PlayStation pads and generic USB gamepads (all buttons and the d-pad / POV hat).
+- Only a new press interrupts speech; holding a button does not keep silencing NVDA.
+- Controllers can be connected or disconnected while NVDA is running.
+- Works in the background, whatever window has focus.
+
+## Toggling
+
+The command "Toggles whether pressing a game controller button stops speech" can be assigned a gesture under NVDA menu → Preferences → Input Gestures → Controller Shutup. It has no gesture by default. The setting is saved in your NVDA configuration.
+
+## Building
+
+```
+python build.py
+```
+
+This produces `controllerShutup-<version>.nvda-addon` in the repository root.
+
+## License
+
+GPL-2.0, see [LICENSE](LICENSE).
